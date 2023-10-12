@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="compscii.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="Home.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Events & Achievements</title>
+
+<style>
+
+article {
+  --img-scale: 1.001;
+  --title-color: black;
+  --link-icon-translate: -20px;
+  --link-icon-opacity: 0;
+  position: relative;
+  border-radius: 16px;
+  box-shadow: none;
+  background: #fff;
+  transform-origin: center;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+  z-index: -1;
+}
+
+article a::after {
+  position: absolute;
+  inset-block: 0;
+  inset-inline: 0;
+  cursor: pointer;
+  content: "";
+  z-index: -1;
+}
+
+/* basic article elements styling */
+article h2 {
+  margin: 0 0 18px 0;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.9rem;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+  transition: color 0.3s ease-out;
+  z-index: -1;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  z-index: -1;
+}
+
+article img {
+  max-width: 100%;
+  transform-origin: center;
+  transform: scale(var(--img-scale));
+  transition: transform 0.4s ease-in-out;
+  z-index: -1;
+}
+
+.article-body {
+  padding: 24px;
+  z-index: -1;
+}
+
+article a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #28666e;
+  z-index: -1;
+}
+
+article a:focus {
+  outline: 1px dotted #28666e;
+  z-index: -1;
+}
+
+article a .icon {
+  min-width: 24px;
+  width: 24px;
+  height: 24px;
+  margin-left: 5px;
+  transform: translateX(var(--link-icon-translate));
+  opacity: var(--link-icon-opacity);
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+/* using the has() relational pseudo selector to update our custom properties */
+article:has(:hover, :focus) {
+  --img-scale: 1.1;
+  --title-color: #28666e;
+  --link-icon-translate: 0;
+  --link-icon-opacity: 1;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  z-index: -1;
+}
+
+
+/************************ 
+Generic layout (demo looks)
+**************************/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+.articles {
+  display: grid;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+  z-index: -1;
+}
+
+@media screen and (max-width: 960px) {
+  article {
+    container: card/inline-size;
+  }
+  .article-body p {
+    display: none;
+  }
+}
+
+@container card (min-width: 380px) {
+  .article-wrapper {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 16px;
+  }
+  .article-body {
+    padding-left: 0;
+    z-index: -1;
+  }
+  figure {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+  figure img {
+    height: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    z-index: -1;
+  }
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+  z-index: -1;
+}
+section {
+  padding: 40px 0;
+  text-align: center;
+  z-index: -1;
+}
+
+.all{
+  z-index: -1;
+}
+
+</style>
+</head>
+<body style="background-color:rgba(202, 225, 232, 0.995);">
+  <table border="0" width="100%" style="  background-image: linear-gradient(to bottom right, rgba(208, 206, 206, 0.493), rgb(255, 255, 255));">
+      <tr>
+          <td rowspan="2" width="50px" align="right"><img src="Photos/logo3.png" width="30px"></td>
+          <td width="140px"><a href="mailto:directorit@kdu.ac.lk" style=" color: rgb(0, 0, 0);">directorit@kdu.ac.lk</a></td>
+          <td rowspan="2" align="right" width="50px"><img src="Photos/logo2.png" width="25px"></td>
+          <td align="left" width="240px">+94-11-2605715</td>
+          <td></td>
+          <td align="right" width="50px"><a href="https://www.facebook.com/KotelawalaDefenceUniversity" target="_blank"><img src="Photos/logo4.png" width="30px"></a></target></td>
+          <td align="center"width="50px"><a href="https://www.youtube.com/channel/UC3pp0YuDK7eXDJl6VPArYpA" target="_blank"><img src="Photos/logo5.png" width="30px"></a></td>
+      </tr>
+  </table >
+  <table border="0" style="background-color:rgb(255, 255, 255);" width="100%">
+    <tr>
+        <td><a href="Home.html"><img src="Photos/logo1.png" width="100%"></a></td>
+    </tr>
+</table>
+  <script src="Home.js"></script>
+
+<div class="sticky">
+  <div class="topnav" id="myTopnav">
+    <a href="Home.html" class="active">Home</a>
+    <a href="aboutfaculty.html">About Faculty</a>
+    <div class="dropdown">
+      <button class="dropbtn">Degree Programmes 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="cscoursework.html">BSc. (Hons) in Computer Science</a>
+        <a href="secoursework.html">BSc. (Hons) in Software Engineering</a>
+      </div>
+    </div> 
+    <a href="event.html">Events & Achievements</a>
+    <a href="staff.html">Lecture Panel</a>
+    <a href="Contact_us.html">Contact Us</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+</div>
+
+<div class="all">
+<section id="Events">
+  <h2>Events</h2>
+  <section class="articles">
+    <article>
+      <div class="article-wrapper">
+        <figure>
+          <img src="https://foc.kdu.ac.lk/wp-content/uploads/2022/08/ICT-Academy-Logo-300x300.jpg" alt="" />
+        </figure>
+        <div class="article-body">
+          <h2>CALL For Registration of HCIA-Datacom Exam Preparation Course</h2>
+          <p>
+            CALL For Registration of HCIA-Datacom Exam Preparation Course The Faculty of Computing is going to offer a few pre-preparation sessions for the HCIA-Datacom course, which is offered by Huawei. The sessions are initially planned to be held as online discussions, and those who perform well can receive vouchers to sit exams. 
+          </p>
+          <a href="https://foc.kdu.ac.lk/news/call-for-registration-of-hcia-datacom-exam-preparation-course/" class="read-more">
+            Read more <span class="sr-only">about this is some title</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </article>
+    <article>
+  
+      <div class="article-wrapper">
+        <figure>
+          <img src="https://foc.kdu.ac.lk/wp-content/uploads/2023/06/IRC.jpg" alt="" />
+        </figure>
+        <div class="article-body">
+          <h2>16 th International Research Conference</h2>
+          <p>
+            The 16th International Research Conference at General Sir John Kotelawala Defence University is a prestigious gathering that brings together scholars, scientists, and researchers from around the world. This event serves as a platform for interdisciplinary discussions, knowledge sharing, and collaborative research endeavors, fostering innovation and academic excellence.
+          </p>
+          <a href="https://foc.kdu.ac.lk/news/16th-international-research-conference/" class="read-more">
+            Read more <span class="sr-only">about this is some title</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </article>
+    <article>
+  
+      <div class="article-wrapper">
+        <figure>
+          <img src="https://foc.kdu.ac.lk/wp-content/uploads/2022/11/PHOTO-2022-11-29-17-28-13-678x1024.jpg" alt="" />
+        </figure>
+        <div class="article-body">
+          <h2>FOC Student Symposium 2023</h2>
+          <p>
+            The FOC Student Symposium 2023 at General John Kotelawala Defence University is a vibrant academic gathering where students converge to present their research, explore innovative concepts, and engage in intellectual discussions. This event fosters academic growth and interdisciplinary collaboration while providing a platform for showcasing emerging talents in various fields.
+          </p>
+          <a href="https://foc.kdu.ac.lk/news/foc-student-symposium-2023/" class="read-more">
+            Read more <span class="sr-only">about this is some title</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <section id="Achievements">
+    <h2>Achievements</h2>
+      <div class="articles">
+        <article>
+          <figure>
+            <img src="https://kdu.ac.lk/wp-content/uploads/2023/01/Sahasak-nimawum-2021-2.jpg.webp" alt="" />
+            <a href="https://kdu.ac.lk/2022/11/24/foc-student-wins-gold-medal-at-the-sahasak-nimawum-2021/">FOC Student wins Gold medal at the Sahasak Nimawum 2021</a>
+          </figure>
+          <h2><span>FOC Student wins Gold medal at the Sahasak Nimawum 2021</span></h2>
+          
+        </article>
+        <article>
+          <figure>
+            <img src="https://kdu.ac.lk/wp-content/uploads/2023/01/IMG-20221130-WA0012.jpg" alt="" />
+            <a href="https://kdu.ac.lk/2022/12/05/kdu-dancing-club-and-music-club-emerged-as-the-champions-of-three-prominent-categories-at-tantalize-2022-inter-university-talent-competition/">KDU Dancing Club and Music Club emerged as the champions of three prominent categories at TANTALIZE-2022 Inter-University Talent Competition</a>
+          </figure>
+          </figure>
+          <h2><span>KDU Dancing Club and Music Club emerged as the champions of three prominent categories at TANTALIZE-2022 Inter-University Talent Competition</span></h2>
+        </article>
+        <article>
+          <figure>
+            <img src="https://kdu.ac.lk/wp-content/uploads/2023/01/Star1.jpg.webp" alt="" />
+            <a href="https://kdu.ac.lk/2023/01/02/a-star-born-from-kdu/">A Star, Born from KDU</a>
+          </figure>
+          <h2><span>A Star, Born from KDU</span></h2>
+        </article>
+        <article>
+          <figure>
+            <img src="https://kdu.ac.lk/wp-content/uploads/2023/07/ok.jpg.webp" alt="" />
+            <a href="https://kdu.ac.lk/2023/06/18/thrilling-performances-of-officer-cadets-of-kdu-at-the-indian-open-international-karate-championship-2023/">Thrilling Performances of Officer Cadets of KDU at the Indian Open International Karate Championship 2023</a>
+          </figure>
+          <h2><span>Thrilling Performances of Officer Cadets of KDU at the Indian Open International Karate Championship 2023</span></h2>
+        </article>
+      </div>
+  </section>
+
+</div>
+
+
+  <footer>
+    <table border="0" width="100%" style="  background-color: rgb(2, 2, 36); color: #f9f9f9;">
+        <tr>
+            <td align="center" >Copyright © 2023 Web Team - General Sir John Kotelawala Defence University</td>
+
+        </tr>
+    </table >
+
+  </footer>
+</body>
+</html>

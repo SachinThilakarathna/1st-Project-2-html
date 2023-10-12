@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Home.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <title>About Faculty</title>
+<style>
+
+
+
+.pics{
+  display:none;
+}
+.slide{
+  max-width: 100%;
+  padding: 20px;
+  margin:auto;
+  background-color: rgba(208, 206, 206, 0.493);
+}
+
+
+#tt{
+    position:relative;
+    padding: 50px;
+    border: 2px solid white;
+}
+
+</style>
+
+</head>
+
+
+<body style="background-color:rgba(202, 225, 232, 0.995);">
+  <table border="0" width="100%" style="  background-image: linear-gradient(to bottom right, rgba(208, 206, 206, 0.493), rgb(255, 255, 255));">
+      <tr>
+          <td rowspan="2" width="50px" align="right"><img src="Photos/logo3.png" width="30px"></td>
+          <td width="140px"><a href="mailto:directorit@kdu.ac.lk" style=" color: rgb(0, 0, 0);">directorit@kdu.ac.lk</a></td>
+          <td rowspan="2" align="right" width="50px"><img src="Photos/logo2.png" width="25px"></td>
+          <td align="left" width="140px">+94-11-2605715</td>
+          <td></td>
+          <td align="right" width="50px"><a href="https://www.facebook.com/KotelawalaDefenceUniversity" target="_blank"><img src="Photos/logo4.png" width="30px"></a></target></td>
+          <td align="center"width="50px"><a href="https://www.youtube.com/channel/UC3pp0YuDK7eXDJl6VPArYpA" target="_blank"><img src="Photos/logo5.png" width="30px"></a></td>
+      </tr>
+  </table >
+  <table border="0" style="background-color:rgb(255, 255, 255);" width="100%">
+    <tr>
+        <td><a href="Home.html"><img src="Photos/logo1.png" width="100%"></a></td>
+    </tr>
+</table>
+
+<div class="sticky">
+  <div class="topnav" id="myTopnav">
+    <a href="Home.html" class="active">Home</a>
+    <a href="aboutfaculty.html">About Faculty</a>
+    <div class="dropdown">
+      <button class="dropbtn">Degree Programmes 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="cscoursework.html">BSc. (Hons) in Computer Science</a>
+        <a href="secoursework.html">BSc. (Hons) in Software Engineering</a>
+      </div>
+    </div> 
+    <a href="event.html">Events & Achievements</a>
+    <a href="staff.html">Lecture Panel</a>
+    <a href="Contact_us.html">Contact Us</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+</div>
+<script src="Home.js"></script>
+<div class="slide">
+  <center>
+    <img class="pics" src="Photos/walauwa3.jpg" style="width:100%; height:450px">
+    <img class="pics" src="Photos/foc-2.jpg" style="width:100%; height:450px">
+  <img class="pics" src="Photos/southern3.jpg" style="width:100%; height:450px">
+  <img class="pics" src="Photos/CCNA-Lab7.jpg" style="width:100%; height:450px">
+  <img class="pics" src="Photos/ICT-Lecture-Theatre-2-300x138.jpg" style="width:100%; height:450px">
+  <img class="pics" src="Photos/law.jpg" style="width:100%; height:450px">
+  <img class="pics" src="Photos/huawei lab.jpg" style="width:100%; height:450px">
+  <img class="pics" src="Photos/fompic.jpg" style="width:100%; height:450px;">
+</center>
+</div>
+
+<script>
+var myIndex = 0;
+sliding();
+
+function sliding() {
+  var i;
+  var x = document.getElementsByClassName("pics");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(sliding, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+
+<div class="divss">
+    <h1>About <font color="red">Faculty of Computing</font></h1>
+    <image align="right" src="Photos/walauwa3.jpg"   width="500px" alt="foc" class="walauwa"></image>
+    <p>The Faculty of Computing (FOC) of General Sir John Kotelawala Defence University 
+        was established in 2015, and this is the first ever Computing Faculty in the Sri Lankan State University 
+        System dedicated to offer the widest spectrum of computing degrees under one umbrella of Computing 
+        for students of all streams of G.C.E (A/L), except Technology Stream.
+        and all the computing degrees offered by FOC have been benchmarked with ACM/IEEE international standards.</p>
+
+    <p>The faculty is consisting of four departments, 
+      <ul>
+        <li>Department of Computer Science</li>
+        <li>Department of Computer Engineering</li>
+        <li>Dapertment of Information Technology</li>
+        <li>Department of Computational Mathematics</li>
+      </ul>
+    FOC strives to build students' enthusiasm, intellectual capacity, and active involvement 
+    in research from the day one of their undergraduate studies.</p>    
+    
+    <br><br> <br> 
+</div>
+
+
+<div id="tt">
+
+</div>
+
+
+
+
+
+<div>
+    
+</div>
+
+
+<footer>
+  <table border="0" width="100%" style="  background-color: rgb(2, 2, 36); color: #f9f9f9;">
+      <tr>
+          <td align="center" >Copyright © 2023 Web Team - General Sir John Kotelawala Defence University</td>
+
+      </tr>
+  </table >
+
+</footer>
+</body>
+</html>

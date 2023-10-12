@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Home.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>BSc (Hons) Computer Science</title>
+
+<style>
+
+
+h1, h2{
+  color: rgb(6, 6, 81);
+}
+
+.pic1{
+  padding-right: 5px;
+}
+
+.hh{
+  text-decoration: underline;
+}
+
+table .coursedetails{
+  border: none;
+  position: fixed;
+}
+
+th{
+  background-color: rgba(208, 206, 206, 0.493);
+  padding-top:10px;
+  padding-bottom: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
+  color:rgb(6, 6, 81);
+}
+
+#coursedetails.sem{
+    display:none;
+}
+  
+.sem{
+   display:none;
+   background-color: #424241;
+   color:#f1f1f1;
+}
+
+#tt{
+    position:relative;
+    padding: 50px;
+    border: 2px solid white;
+}
+</style>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+
+
+<body style="background-color:rgba(202, 225, 232, 0.995);">
+  <table border="0" width="100%" style="  background-image: linear-gradient(to bottom right, rgba(208, 206, 206, 0.493), rgb(255, 255, 255));">
+      <tr>
+          <td rowspan="2" width="50px" align="right"><img src="Photos/logo3.png" width="30px"></td>
+          <td width="140px"><a href="mailto:directorit@kdu.ac.lk" style=" color: rgb(0, 0, 0);">directorit@kdu.ac.lk</a></td>
+          <td rowspan="2" align="right" width="50px"><img src="Photos/logo2.png" width="25px"></td>
+          <td align="left" width="140px">+94-11-2605715</td>
+          <td></td>
+          <td align="right" width="50px"><a href="https://www.facebook.com/KotelawalaDefenceUniversity" target="_blank"><img src="Photos/logo4.png" width="30px"></a></target></td>
+          <td align="center"width="50px"><a href="https://www.youtube.com/channel/UC3pp0YuDK7eXDJl6VPArYpA" target="_blank"><img src="Photos/logo5.png" width="30px"></a></td>
+      </tr>
+  </table >
+  <table border="0" style="background-color:rgb(255, 255, 255);" width="100%">
+    <tr>
+        <td><a href="Home.html"><img src="Photos/logo1.png" width="100%"></a></td>
+    </tr>
+</table>
+
+<div class="sticky">
+  <div class="topnav" id="myTopnav">
+    <a href="Home.html" class="active">Home</a>
+    <a href="aboutfaculty.html">About Faculty</a>
+    <div class="dropdown">
+      <button class="dropbtn">Degree Programmes 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="cscoursework.html">BSc. (Hons) in Computer Science</a>
+        <a href="secoursework.html">BSc. (Hons) in Software Engineering</a>
+      </div>
+    </div> 
+    <a href="event.html">Events & Achievements</a>
+    <a href="staff.html">Lecture Panel</a>
+    <a href="Contact_us.html">Contact Us</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+</div>
+<script src="Home.js"></script>
+
+<div class="divss">
+  <h1>Bachelor of Science Honours in <font color="red">Computer Science</font></h1>
+  <image align="right" src="Photos/image11.jpg"   width="500px" height="316.5px" alt="computer science" class="pic1">
+  <p><justify>Offered by the Faculty of Computing, BSc (Hons) in Computer Science degree programme is a 
+      four year programme which provides individuals with a strong foundation on theoretical concepts in the domain of 
+      Computer Science as well as the practical knowledge and skills necessary to implement new solutions and innovations as 
+      computer scientists. The Program is carefully designed in accordance with ACM/IEEE international 
+      guidelines and the requirements of Sri Lanka Qualifications Framework.</justify></p><br>
+
+      
+    <h2>  Course Duration - 4 Years</h2><br>
+  
+  <br><br> <br> </div>
+  <br>
+
+  <div class="divss">
+
+  <table class="coursedetails" width="100%">
+    <h2 class="hh">  Course Content</h2>
+
+      <tr onclick="show_hide_row('ye1'); show_hide_row('sem1work'); show_hide_row('sem2work');">
+          <th colspan="2">Year 01</a></th>
+      </tr>
+      <tr id="ye1" class="sem"> 
+          <th>Semester 01</th>
+          <th>Semester 02</th>
+      </tr>
+      <tr> 
+          <td id="sem1work" class="sem">
+              <ul>
+                  <li>CS1012	Fundamentals of Programming</li>
+                  <li>CS1101	Programming Laboratory*</li>
+                  <li>CS1022	Foundation of Computer Science</li>
+                  <li>CS1032	Computer Systems Architecture</li>
+                  <li>CS1043	Fundamentals of Databases</li>
+                  <li>CS1052	Fundamentals of Visual Computing</li>
+                  <li>CM1033	Probability and Statistics</li>
+                  <li>CM1012	Engineering Mathematics</li>
+                  <li>DL1132	English: Basic Study Skills for CS/SE/CE</li>
+                  <li>LS1052	Leadership Training</li>
+                  <li>MS1014	Military Studies I</li>
+              </ul>
+          </td>
+          <td id="sem2work" class="sem">
+              <ul>
+                  <li>CS1062	Developments in Mathematics & Sciences</li>
+                  <li>CS1073	Object Oriented Programming I</li>
+                  <li>CS1082	Web Development</li>
+                  <li>CS1092	Computer Networks I</li>
+                  <li>CM1052	Discrete Mathematics</li>
+                  <li>COE1993	Group Project in Hardware</li>
+                  <li>EE1102	Fundamentals of Electrical Engineering</li>
+                  <li>ET1102	Basic Electronics</li>
+                  <li>DL2142	English: Advance Study Skills for CS/SE/CE</li>
+                  <li>MS1024	Military Studies II</li>
+                  <br>
+              </ul>
+          </td>
+      </tr>
+
+
+
+      <tr onclick="show_hide_row('ye2'); show_hide_row('sem3work'); show_hide_row('sem4work');">
+          <th colspan="2">Year 02</th>
+      </tr>
+      <tr id="ye2" class="sem"> 
+          <th>Semester 03</th>
+          <th>Semester 04</th>
+      </tr>
+      <tr> 
+          <td id="sem3work" class="sem">
+              <ul>
+                  <li>CS2013	Data Structures and Algorithms</li>
+                  <li>CS2022	Operating Systems</li>
+                  <li>CS2032	Object Oriented Programming II</li>
+                  <li>CS2042	Computer Networks II</li>
+                  <li>CS2052	Requirement Engineering</li>
+                  <li>EE2122	Electronics System</li>
+                  <li>CM2013	Calculus & Numerical Methods</li>
+                  <li>MF2113	Principles of Management</li>
+                  <li>DL3152	Writing and Speaking Skills</li>
+                  <li>MS3032	Strategic Defence Studies</li>
+                  <li>MS2044	Military Studies III</li>
+              </ul>
+          </td>
+          <td id="sem4work" class="sem">
+              <ul>
+                  <li>CS2062	Data Structures and Algorithms II</li>
+                  <li>CS2072	Advance Computer Architecture & Organization</li>
+                  <li>CS2082	Artificial Intelligence</li>
+                  <li>SE2013	Software Project Management</li>
+                  <li>SE2022	Software Process Engineering</li>
+                  <li>CM2032	Statistical Distributions and Inference</li>
+                  <li>EE2222	Computer Interfacing & Microprocessors</li>
+                  <li>CS2993	Group project in Software Development</li>
+                  <li>DL4162	Research Writing Skills</li>
+                  <li>MS2024	Military Studies IV</li>
+                  <br>
+              </ul>
+          </td>
+      </tr>
+
+
+
+      <tr onclick="show_hide_row('ye3'); show_hide_row('sem5work'); show_hide_row('sem6work');">
+          <th colspan="2">Year 03</th>
+      </tr>
+      <tr id="ye3" class="sem"> 
+          <th>Semester 05</th>
+          <th>Semester 06</th>
+      </tr>
+      <tr> 
+          <td id="sem5work" class="sem">
+              <ul>
+                  <li>CS3202	UX and UI Engineering</li>
+                  <li>CS3023	Advanced Databases and Big Data Analytics</li>
+                  <li>CS3032	Concurrent Programming</li>
+                  <li>CS3042	Image Processing & Computer Vision</li>
+                  <li>CS3052	Essentials of Computer Law</li>
+                  <li>CS3062	Research Methodology</li>
+                  <li>CS3072	Logic Programming</li>
+                  <li>CS3082	Mobile Computing</li>
+                  <li>CS3092	Computer and Network Security</li>
+                  <li>CS3102	Bioinformatics</li>
+                  <li>SE3042	Software Architecture & Design</li>
+                  <br>
+              </ul>
+          </td>
+          <td id="sem6work" class="sem">
+              <ul>
+                  <li>CS3112	Computer Graphics & Visualization</li>
+                  <li>CS3122	Automata Theory</li>
+                  <li>CS3132	High Performance Computing</li>
+                  <li>CS3142	Complex Systems and Agent Technology</li>
+                  <li>CS3152	Information Security</li>
+                  <li>CS3162	Social Aspects of Computing</li>
+                  <li>CS3172	Digital Forensics</li>
+                  <li>CS3182	Modeling and Simulation</li>
+                  <li>CS3192	Nature Inspired Computing</li>
+                  <li>CS3992	Independent Study</li>
+                  <li>CM3013	Operational Research</li>
+                  <li>COE3052	Microcontrollers and Embedded Systems</li>
+              </ul>
+          </td>
+      </tr>
+
+      
+      <tr onclick="show_hide_row('ye4'); show_hide_row('sem7work'); show_hide_row('sem8work');">
+          <th colspan="2">Year 04</th>
+      </tr>
+      <tr id="ye4" class="sem"> 
+          <th>Semester 07</th>
+          <th>Semester 08</th>
+      </tr>
+      <tr> 
+          <td id="sem7work" class="sem">
+              <ul>
+                  <li>CS 4012	Emerging Trends in Computing</li>
+                  <li>CS4022	Theory of Programing Languages</li>
+                  <li>CS4032	Natural Language Processing</li>
+                  <li>CS4042	Machine Learning</li>
+                  <li>SE4042	Software Quality Assurance</li>
+                  <li>CS4062	Artificial Cognitive Systems</li>
+                  <li>CS4072	Computability and Complexity</li>
+                  <li>CS4082	Semantic Web and Ontology</li>
+                  <li>CS4092	Distributed Systems</li>
+                  <li>CS4102	Computer Music</li>
+                  <li>COE4022	Advanced Operating Systems</li>
+                  <li>COE4042	Robotics and Automation</li>
+                  <li>SE4012	Formal Methods and Software Verification</li>
+                  <li>CM4012	Advanced Topics in Statistics</li>
+                  <li>CS4999	Individual Research Project (Final evaluation at Semester 8)</li>
+              </ul>
+          </td>
+          <td id="sem8work" class="sem">
+              <ul>
+                  <li>CS4999	Individual Research Project (Conducted through Semester 7 and 8)</li>
+                  <li>CS4986	Industrial Training</li>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br><br><br><br><br><br><br><br><br>
+
+              </ul>
+          </td>
+      </tr>
+
+  </table> </div>
+  
+  <script>
+
+    function show_hide_row(row){
+      $("#"+row).toggle();
+    }
+
+  </script>
+
+  <div id="tt">
+
+  </div>
+
+
+  <footer>
+    <table border="0" width="100%" style="  background-color: rgb(2, 2, 36); color: #f9f9f9;">
+        <tr>
+            <td align="center" >Copyright © 2023 Web Team - General Sir John Kotelawala Defence University</td>
+
+        </tr>
+    </table >
+
+  </footer>
+</body>
+</html>

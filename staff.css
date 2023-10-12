@@ -1,0 +1,304 @@
+/* Reset default margin and padding */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color and text color */
+body {
+    background-color: white;
+    font-family: "montserrat", sans-serif;
+   
+}
+
+
+
+.header-image-container {
+    text-align: center;
+}
+
+.header-image {
+    width: "10%" ;
+    height: "10%";
+    
+}
+
+/* Navigation menu styles */
+nav {
+    background-color: #000770;
+    text-align: center;
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 20px;
+    position: relative; /* Create a stacking context for submenus */
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    display: block;
+    padding: 10px;
+}
+
+/* Styles for the submenu */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position the submenu below the parent */
+    left: 0;
+    background-color: #000770;
+    z-index: 2; /* Ensure the submenu appears above the navigation menu */
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    margin: 0;
+    display: block;
+}
+
+.submenu a {
+    padding: 10px;
+    font-size: 18px;
+}
+
+.submenu1 {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position the submenu below the parent */
+    left: 0;
+    background-color: #000770;
+    z-index: 2; /* Ensure the submenu appears above the navigation menu */
+}
+
+.drop2:hover .submenu1{
+    display: block;
+}
+
+.submenu1 li {
+    margin: 0;
+    display: block;
+}
+
+.submenu1 a {
+    padding: 18px;
+    font-size: 14px;
+}
+
+/* Style the Font Awesome arrow icon */
+nav li.dropdown > a i {
+    margin-left: 5px; /* Add spacing between the text and icon */
+    font-size: 12px; /* Adjust the icon size as needed */
+}
+
+/* Style the submenu items without the arrow */
+nav .submenu a {
+    display: block; /* Display the items as blocks */
+    white-space: nowrap; /* Prevent wrapping to the next line */
+    margin-right: 10px; /* Add spacing between items */
+    text-align: left; /* Align text to the left */
+}
+
+nav .submenu1 a {
+    display: block; /* Display the items as blocks */
+    white-space: nowrap; /* Prevent wrapping to the next line */
+    margin-right: 10px; /* Add spacing between items */
+    text-align: left; /* Align text to the left */
+}
+
+nav li.drop2 > a i {
+    margin-left: 10px; /* Add spacing between the text and icon */
+    font-size: 12px; /* Adjust the icon size as needed */
+}
+/* Slider container styles */
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Slider styles */
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Slide styles */
+.slide {
+    min-width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+/* Main content styles */
+.container {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(1, 11, 87);
+}
+
+/* CSS for your existing footer styles */
+/* Footer styles */
+
+
+
+/* Style for the contact info section */
+#contact-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.contact-box {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    flex-basis: calc(25% - 20px); /* Set the width for each contact box */
+}
+
+.contact-box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-box p {
+    font-size: 16px;
+}
+
+/* Style for the phone icon */
+.contact-box img {
+    width: 32px; /* Adjust the width as needed */
+    height: 32px; /* Adjust the height as needed */
+    margin-bottom: 10px;
+}
+
+.button {
+    border-width: 10;
+    border-color: rgb(0, 0, 0);
+    background-color: #003e46;
+    color: rgb(255, 255, 255);
+    
+    font-size: 16px;
+    cursor: pointer;
+   
+    
+    bottom: 10%;
+    right: 10%;
+    border-radius: 25px;
+  }
+
+/*style for profile navigation menu */
+.navbar {
+    background-color: #530e0e;
+    text-align: center;
+    height: 50px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 20px;
+    position: relative; /* Create a stacking context for submenus */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    display: block;
+    padding: 10px;
+}
+
+/*contain of*/
+.home-content{
+    padding-left: 10%;
+}
+.list{
+    padding-left: 10%;
+    list-style: square;
+}
+
+.list1{
+    padding-left: 20%;
+    font-size: medium;
+    list-style:square;
+}
+
+#head3{
+    padding-left: 10%;
+    
+}
+
+#topic{
+    padding-left: 5%;
+    font-weight: 100px;
+    font-size: large;
+    color: rgb(31, 12, 12);
+    text-decoration: underline;
+
+}
+
+.topbutton{
+    border-width: 5;
+    border-color: rgb(0, 0, 0);
+    background-color: #03032c;
+    color: rgb(255, 255, 255);
+    
+    font-size: 30pt;
+    cursor: pointer;
+    height: 5%;
+    width: 35px;
+    
+    bottom: 10%;
+    right: 10%;
+    border-radius: 50px;
+    position: fixed;
+    right: 10;
+    
+}
+
+#pre{
+    padding-left: 10%;
+    font-weight: 100px;
+    font-size: large;
+    color: rgb(31, 12, 12);
+}
+
